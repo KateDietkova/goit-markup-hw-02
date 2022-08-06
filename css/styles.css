@@ -1,0 +1,223 @@
+/* primary color text #212121 */
+/* secondary color text #757575 */
+/* accent color #2196F3 */
+/* logo-text-color #000000 */
+/* primary-white-color #FFFFFF */
+
+/* secondary white color  rgba(255, 255, 255, 0.6);*/
+
+/* secondary background color #F5F4FA */
+/* backgrond dark color #2F303A */
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --logo-text-color: #000000;
+    --accent-color: #2196F3;
+
+    --primary-white-color: #FFFFFF;
+    --secondary-white-color: rgb(255, 255, 255, 0.6);
+    --secondary-background: #F5F4FA;
+    --dark-background: #2F303A;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    color: var(--primary-text-color);
+}
+
+.footer,
+.hero {
+    background-color: var(--dark-background);       /*For better visibility text*/
+}
+
+/* Header */
+
+.logo, 
+.logo-footer{
+    color: var(--logo-text-color);
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    text-decoration: none;
+}
+
+.logo .accent, 
+.logo-footer .accent {
+    color: var(--accent-color);
+}
+
+.site-nav .link,
+.contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts.link:hover,
+.contacts.link:focus{
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.contacts {
+    color: var(--secondary-text-color);
+}
+
+
+/* Section-hero */
+
+
+.hero-title {
+    color: var(--primary-white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+}
+
+
+
+
+/* Other sections*/
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+
+/* Features section */
+
+.feature-list .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.feature-list .text {
+    color: var(--secondary-text-color);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* Employees section */
+
+.employee-list .name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.employee-list .position {
+    color: var(--secondary-text-color);
+
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+/* Footer */
+
+.logo-footer,
+.address {
+    color: var(--primary-white-color);
+}
+
+
+.address {
+    font-style: normal;             /* Because tag <address> has already had default values - italic */
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.address .contacts {
+    color: var(--secondary-white-color);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+
+
+
+/* Styles for portfolio.html  - main*/
+
+.category-list .button {
+    background-color: var(--secondary-background);
+    color: var(--primary-text-color);
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.category-list .button:hover,
+.category-list .button:focus{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+
+    cursor: pointer;
+}
+
+.portfolio-list .link{
+    text-decoration: none;
+}
+.portfolio-list .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-list .type {
+    color: var(--secondary-text-color);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
