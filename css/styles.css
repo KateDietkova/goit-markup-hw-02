@@ -195,14 +195,14 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+
+    cursor: pointer;
 }
 
 .category-list .button:hover,
 .category-list .button:focus{
     background-color: var(--accent-color);
     color: var(--primary-white-color);
-
-    cursor: pointer;
 }
 
 .portfolio-list .link{
