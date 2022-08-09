@@ -26,7 +26,6 @@ body {
     color: var(--primary-text-color);
 
     font-family: Roboto, sans-serif;
-    letter-spacing: 0.03em;
     
 }
 
@@ -53,17 +52,17 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
 
     text-decoration: none;
 }
 
-.logo .accent, 
-.logo-footer .accent {
+.accent {
     color: var(--accent-color);
 }
 
-.site-nav .link,
-.contacts {
+.site-nav-link,
+.contacts-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -72,18 +71,18 @@ body {
     text-decoration: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contacts.link:hover,
-.contacts.link:focus{
+.site-nav-link:hover,
+.site-nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus{
     color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.current {
     color: var(--accent-color);
 }
 
-.contacts {
+.contacts-link {
     color: var(--secondary-text-color);
 }
 
@@ -125,19 +124,20 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 
 /* Features section */
 
-.feature-list .title {
+.feature-list-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
-.feature-list .text {
+.feature-list-text {
     color: var(--secondary-text-color);
 
     font-size: 14px;
@@ -147,38 +147,45 @@ body {
 
 /* Employees section */
 
-.employee-list .name {
+.employee-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    letter-spacing: 0.03em;
 }
 
-.employee-list .position {
+.employee-text {
     color: var(--secondary-text-color);
 
     font-size: 16px;
     line-height: 1.18;
+    letter-spacing: 0.03em;
 }
 
 /* Footer */
+
+.address,
+.address-contacts-link {
+    color: var(--secondary-white-color);
+
+    font-style: normal;             /* Because tag <address> has already had default values - italic */
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+}
 
 .logo-footer,
 .address {
     color: var(--primary-white-color);
 }
 
-
-.address {
-    font-style: normal;             /* Because tag <address> has already had default values - italic */
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-.address .contacts {
-    color: var(--secondary-white-color);
-
-    font-size: 14px;
-    line-height: 1.7;
+.address:hover,
+.address:focus,
+.address-contacts-link:hover,
+.address-contacts-link:focus {
+    color: var(--accent-color);
 }
 
 
@@ -187,7 +194,7 @@ body {
 
 /* Styles for portfolio.html  - main*/
 
-.category-list .button {
+.category-list-button {
     background-color: var(--secondary-background);
     color: var(--primary-text-color);
 
@@ -195,29 +202,31 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    letter-spacing: 0.03em;
 
     cursor: pointer;
 }
 
-.category-list .button:hover,
-.category-list .button:focus{
+.category-list-button:hover,
+.category-list-button:focus{
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
 
-.portfolio-list .link{
+.portfolio-link {
     text-decoration: none;
 }
-.portfolio-list .title {
+.portfolio-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.portfolio-list .type {
+.portfolio-text {
     color: var(--secondary-text-color);
 
     font-size: 16px;
     line-height: 1.8;
+    letter-spacing: 0.03em;
 }
